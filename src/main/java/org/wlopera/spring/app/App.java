@@ -28,15 +28,16 @@ public class App {
 		ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 
 		System.out.println("\nUso de Anotaciones....................................................");
-		for (String value : context.getBeanDefinitionNames()) {
-			System.out.println(value);
-		}
+//		for (String value : context.getBeanDefinitionNames()) {
+//			System.out.println(value);
+//		}
 		
-		System.out.println("\nAutor: " + context.getBean(Autor.class).toString());
-		System.out.println("Libro: " + context.getBean("libroService").toString());
+		System.out.println("Autor: " + context.getBean(Autor.class).toString());
+		System.out.println("Libro: " + context.getBean(Libro.class).toString());
 
-		System.out.println("Autor: " + context.getBean(App.class).autor);
-		System.out.println("Libro: " + context.getBean(App.class).libro);
+//		System.out.println("Autor: " + context.getBean(App.class).autor);
+//		System.out.println("Libro: " + context.getBean(App.class).libro);
+		
 		
 		((ConfigurableApplicationContext)factory).close();
 		((ConfigurableApplicationContext)context).close();

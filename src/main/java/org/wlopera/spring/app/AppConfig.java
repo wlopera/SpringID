@@ -10,14 +10,14 @@ import org.wlopera.spring.model.Libro;
 @ComponentScan("org.wlopera.spring")
 public class AppConfig {
 
-	@Bean(name = "libroService")
-	Libro libro() {
-		return new Libro();
-	}
-
-	@Bean
-	Autor autor() {
-		return new Autor();
-	}
+//	@Bean(name = "libroService")
+//	Libro libro() {
+//		return new Libro();
+//	}
+//
+//	@Bean
+//	Autor autor() {
+//		return new Autor();
+//	}
 
 }
